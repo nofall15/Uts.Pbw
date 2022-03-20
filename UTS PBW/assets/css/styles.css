@@ -1,16 +1,10 @@
-/*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-/*===== VARIABLES CSS =====*/
 :root {
   --header-height: 48px;
   --font-semi: 600;
-  /*===== Colores =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
   --hue-color: 224;
   --first-color: rgb(212, 0, 255);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 32px;
   --h2-font-size: 20px;
@@ -21,7 +15,6 @@
   --mb-4: 32px;
   --mb-5: 40px;
   --mb-6: 48px;
-  /*===== z index =====*/
   --z-back: -10;
   --z-fixed: 100;
 }
@@ -35,7 +28,7 @@
   }
 }
 
-/*===== BASE =====*/
+
 ::before,
 ::after {
   box-sizing: border-box;
@@ -74,7 +67,6 @@ img {
   display: block;
 }
 
-/*===== CLASS CSS ===== */
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -101,7 +93,6 @@ img {
   padding-bottom: 32px;
 }
 
-/*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -119,7 +110,6 @@ img {
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
-/*===== NAV =====*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -174,7 +164,6 @@ img {
   cursor: pointer;
 }
 
-/*Active menu*/
 .active::after {
   position: absolute;
   content: '';
@@ -185,12 +174,10 @@ img {
   background-color: var(--first-color);
 }
 
-/*=== Show menu ===*/
 .show {
   right: 0;
 }
 
-/*===== HOME =====*/
 .home {
   position: relative;
   row-gap: 80px;
@@ -259,7 +246,6 @@ img {
   border-radius: 8px;
 }
 
-/* ===== BLOG =====*/
 .blog__container {
   row-gap: 32px;
 }
@@ -278,7 +264,6 @@ img {
   transform: scale(1.1);
 }
 
-/* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
@@ -299,18 +284,12 @@ img {
   margin-left: auto;
 }
 
-/* ===== FOOTER =====*/
 .footer {
   background-color: var(--second-color);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 32px 0;
-}
-
-.footer__title {
-  font-size: 32px;
-  margin-bottom: var(--mb-4);
 }
 
 .footer__social {
@@ -334,7 +313,6 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-/* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
     row-gap: 32px;
